@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Routes, Route, useParams } from 'react-router-dom'
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom'
 import LoginPage from '../LoginPage/LoginPage';
 import MovieListPage from '../MoviesListPage/MovieListPage';
 import MovieDetailPage from '../MovieDetailPage/MovieDetailPage';
@@ -20,7 +20,7 @@ export default function App() {
 					<NavBar />
 					<Routes>
 						<Route path="/" element={<MovieListPage movies={movies} />} />
-						<Route path="/movies/:movieName" element={<MovieDetailPage />} />
+						<Route path="/movies/:movieName" element={<MovieDetailPage movies={movies} />} />
 						<Route path="/actors" element={<ActorListPage />} />
 					</Routes>
 				</>
