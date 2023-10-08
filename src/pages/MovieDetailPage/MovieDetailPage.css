@@ -1,0 +1,14 @@
+.movieDetail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5vh;
+}
+
+.text-content {
+    text-align: left;
+    padding: 20px
+}
+
+.moviePoster {
+    max-height: 600px
+}
